@@ -71,6 +71,7 @@ theme: landscape
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/DPC11/dpc11.github.io.git
-  branch: master
+  repo: 
+    github: git@github.com:DPC11/dpc11.github.io.git,master
+    gitcafe: git@gitcafe.com:dpc11/dpc11.git,gitcafe-pages
   message: New blog updated in {{ now("YYYY-MM-DD HH:mm") }}
