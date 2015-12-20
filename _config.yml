@@ -4,10 +4,10 @@
 
 # Site
 title: 布白
-subtitle: 布白的养老院
-description:
+subtitle: Dont Panic! 骚年，带好你的毛巾!
+description: iOS 开发，科幻小说，民谣吉他
 author: 布白
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
@@ -60,12 +60,20 @@ time_format: HH:mm:ss
 per_page: 10
 pagination_dir: page
 
+index_generator:
+  per_page: 5
+  
+archive_generator:
+  per_page: 10
+  yearly: true
+  monthly: true
+
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 plugins:
 - hexo-generator-cname
 ## Themes: http://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
