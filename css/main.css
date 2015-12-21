@@ -456,23 +456,23 @@ body {
 .header-inner {
   margin: 0 auto;
   padding: 100px 0 70px;
-  width: 800px;
+  width: 700px;
 }
 @media (min-width: 1600px) {
   .container .header-inner {
-    width: 1200px;
+    width: 900px;
   }
 }
 .main {
-  padding-bottom: 180px;
+  padding-bottom: 150px;
 }
 .main-inner {
   margin: 0 auto;
-  width: 800px;
+  width: 700px;
 }
 @media (min-width: 1600px) {
   .container .main-inner {
-    width: 1200px;
+    width: 900px;
   }
 }
 .footer {
@@ -480,16 +480,16 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  min-height: 80px;
+  min-height: 50px;
 }
 .footer-inner {
   box-sizing: border-box;
   margin: 20px auto;
-  width: 800px;
+  width: 700px;
 }
 @media (min-width: 1600px) {
   .container .footer-inner {
-    width: 1200px;
+    width: 900px;
   }
 }
 pre,
@@ -1515,7 +1515,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #6ee0ed;
+  background: #ff6ebb;
 }
 .sidebar-nav {
   margin: 0 0 20px;
@@ -1990,6 +1990,11 @@ body {
     padding-bottom: 100px;
   }
 }
+@media (max-width: 400px) {
+  .main {
+    padding-bottom: 120px;
+  }
+}
 .container .main-inner {
   width: 960px;
 }
@@ -2007,7 +2012,7 @@ body {
   float: right;
   box-sizing: border-box;
   padding: 40px;
-  width: 800px;
+  width: 700px;
   background: #fff;
 }
 @media (min-width: 768px) and (max-width: 991px) {
