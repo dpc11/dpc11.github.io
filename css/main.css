@@ -883,16 +883,6 @@ pre .javascript .function {
   cursor: pointer;
   -webkit-transform: translateZ(0);
 }
-@media (max-width: 767px) {
-  .back-to-top {
-    display: none;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .back-to-top {
-    display: none;
-  }
-}
 .back-to-top:before {
   display: block;
   content: " ";
@@ -1515,7 +1505,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff6ebb;
+  background: #c9778a;
 }
 .sidebar-nav {
   margin: 0 0 20px;
