@@ -4,7 +4,7 @@
 
 # Site
 title: 布白
-subtitle: Dont Panic! 骚年，带好你的毛巾!
+subtitle: Dont Panic! 骚年, 带好你的毛巾!
 description: iOS 开发，科幻小说，民谣吉他
 author: 布白
 language: zh-Hans
@@ -67,6 +67,9 @@ archive_generator:
   per_page: 10
   yearly: true
   monthly: true
+  
+tag_generator:
+  per_page: 10
 
 # Extensions
 ## Plugins: http://hexo.io/plugins/
