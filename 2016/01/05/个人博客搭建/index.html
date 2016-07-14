@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://dpc11.cn/2016/01/05/个人博客搭建/index.html">
 <meta property="og:site_name" content="布白">
 <meta property="og:description" content="前言既然这个博客是用来记录的，那么就没道理不记录一下他自己的诞生过程。之前一直用的 Evernote 来记笔记，虽然记得不多，而且由于我比较懒所以一直崇尚把重要的知识精炼到脑子里 (-_-)，可是发现还是懒不得不然会懒死的。之前在 Evernote 里想列个表都要手动来简直逼死强迫症，恰好在公司实习的时候接触到了 Markdown，卧槽程序猿不拿这个写东西记笔记还怎么爽快地装逼！于是现在是买了 M">
-<meta property="og:updated_time" content="2016-07-14T15:01:50.000Z">
+<meta property="og:updated_time" content="2016-07-14T16:26:32.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人博客搭建">
 <meta name="twitter:description" content="前言既然这个博客是用来记录的，那么就没道理不记录一下他自己的诞生过程。之前一直用的 Evernote 来记笔记，虽然记得不多，而且由于我比较懒所以一直崇尚把重要的知识精炼到脑子里 (-_-)，可是发现还是懒不得不然会懒死的。之前在 Evernote 里想列个表都要手动来简直逼死强迫症，恰好在公司实习的时候接触到了 Markdown，卧槽程序猿不拿这个写东西记笔记还怎么爽快地装逼！于是现在是买了 M">
@@ -312,7 +312,7 @@
 <ol>
 <li>上你的 Github 做个新手任务获得奖励 “崭新的 GitHub Pages”，拿到服务器和 Github 的二级域名。什么？你没有 Github？那你还是为什么要看这篇文章！你 TMD 的到底在干什么！嗯哼！ (╯°□°）╯</li>
 <li>安装 <a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a>，然后 <code>npm install -g hexo-cli</code> 安装 Hexo</li>
-<li>视情况从 Github 上把 Pages 项目 clone 下来或者在本地新建一个 Git 项目，在项目目录中在安装好 Hexo，注意配置好 <code>_config.yml</code>（<em><a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="external">git插件</a> 及配置和 <a href="https://github.com/leecrossley/hexo-generator-cname" target="_blank" rel="external">cname插件</a> 及配置</em>），并且先不要 generate 和 deploy，以免提前覆盖 remote 的 master 分支，影响接下来的分离操作</li>
+<li>视情况从 Github 上把 Pages 项目 clone 下来或者在本地新建一个 Git 项目，在项目目录中在安装好 Hexo，注意配置好 <code>_config.yml</code>（<em><a href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="external">git插件</a> 及配置</em>），并且先不要 generate 和 deploy，以免提前覆盖 remote 的 master 分支，影响接下来的分离操作</li>
 <li>配置好了之后，第一次提交并 push 到 <strong>master 分支</strong>，然后直接分出 <strong>code 分支</strong>，目前的 code 分支上就是代码部分了，之后只需要手动维护这个分支就好了</li>
 <li>同步一下项目回到本地，切换到 code 分支上 hexo d -g 然后 master 分支就被自动覆盖了，前往 dpc11.github.io 就可以看见默认主页了！以后的操作也只需要在 code 分支上进行操作了，远端 master 分支只是用来接收每次 hexo d -g 的更新，本地 master 分支可以不用再管了！</li>
 <li>然后在 <a href="https://gitcafe.com" target="_blank" rel="external">GitCafe</a> 上新建同名项目，再配置一下 <code>_config.yml</code>，重新 hexo d -g 一下，就能同时同步到 Github 和 GitCafe 上了</li>
