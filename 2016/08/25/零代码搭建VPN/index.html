@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="一点人生经验," />
+  <meta name="keywords" content="实用," />
 
 
 
@@ -84,18 +84,21 @@
 
 
 
-<meta name="description" content="前言最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。">
+<meta name="description" content="概念VPN 全称 Virtual Private Network，一般用于从公共网络中访问内网资源，在天朝多用作梯子以翻越 GFW。让我做个更详细的比喻，你们想和远在美国的姑娘们通信，但是主要通信渠道都被长辈们把守着（他们想以此逼你只和国内的姑娘们相亲），于是出现了一批有志之士通过隐蔽渠道帮助你们和美国姑娘们送信（各种免费或付费 VPN 软件），然而他们经常由于送信量太大而暴露被长辈们抓住封杀。因">
 <meta property="og:type" content="article">
-<meta property="og:title" content="毕业回首四年">
-<meta property="og:url" content="http://dpc11.cn/2016/06/23/毕业回首四年/index.html">
+<meta property="og:title" content="零代码搭建 VPN">
+<meta property="og:url" content="http://dpc11.cn/2016/08/25/零代码搭建VPN/index.html">
 <meta property="og:site_name" content="布白">
-<meta property="og:description" content="前言最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。">
-<meta property="og:image" content="http://dpc11.cn/images/%E4%BA%94%E7%8F%AD.jpg">
-<meta property="og:image" content="http://dpc11.cn/images/%E4%B8%8D%E5%A6%82%E8%B7%B3%E8%88%9E.jpg">
-<meta property="og:updated_time" content="2016-08-07T04:14:37.000Z">
+<meta property="og:description" content="概念VPN 全称 Virtual Private Network，一般用于从公共网络中访问内网资源，在天朝多用作梯子以翻越 GFW。让我做个更详细的比喻，你们想和远在美国的姑娘们通信，但是主要通信渠道都被长辈们把守着（他们想以此逼你只和国内的姑娘们相亲），于是出现了一批有志之士通过隐蔽渠道帮助你们和美国姑娘们送信（各种免费或付费 VPN 软件），然而他们经常由于送信量太大而暴露被长辈们抓住封杀。因">
+<meta property="og:image" content="http://dpc11.cn/images/%E8%B4%AD%E4%B9%B0%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="http://dpc11.cn/images/%E6%94%AF%E4%BB%98%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="http://dpc11.cn/images/%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="http://dpc11.cn/images/%E9%85%8D%E7%BD%AE%E9%A1%B5%E9%9D%A2.png">
+<meta property="og:image" content="http://dpc11.cn/images/%E6%9C%8D%E5%8A%A1%E5%99%A8.png">
+<meta property="og:updated_time" content="2016-08-25T15:05:48.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="毕业回首四年">
-<meta name="twitter:description" content="前言最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。">
+<meta name="twitter:title" content="零代码搭建 VPN">
+<meta name="twitter:description" content="概念VPN 全称 Virtual Private Network，一般用于从公共网络中访问内网资源，在天朝多用作梯子以翻越 GFW。让我做个更详细的比喻，你们想和远在美国的姑娘们通信，但是主要通信渠道都被长辈们把守着（他们想以此逼你只和国内的姑娘们相亲），于是出现了一批有志之士通过隐蔽渠道帮助你们和美国姑娘们送信（各种免费或付费 VPN 软件），然而他们经常由于送信量太大而暴露被长辈们抓住封杀。因">
 
 
 
@@ -116,9 +119,9 @@
 
 
 
-  <link rel="canonical" href="http://dpc11.cn/2016/06/23/毕业回首四年/"/>
+  <link rel="canonical" href="http://dpc11.cn/2016/08/25/零代码搭建VPN/"/>
 
-  <title> 毕业回首四年 | 布白 </title>
+  <title> 零代码搭建 VPN | 布白 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +251,7 @@
             
             
               
-                毕业回首四年
+                零代码搭建 VPN
               
             
           </h1>
@@ -260,8 +263,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-23T09:47:42+08:00" content="2016-06-23">
-              2016-06-23
+            <time itemprop="dateCreated" datetime="2016-08-25T22:23:43+08:00" content="2016-08-25">
+              2016-08-25
             </time>
           </span>
 
@@ -274,8 +277,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
                   </a>
                 </span>
 
@@ -307,17 +310,19 @@
       
 
       
-        <h2 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h2><p>最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。</p>
-<p><img src="/images/%E4%BA%94%E7%8F%AD.jpg" alt="五班"></p>
+        <h2 id="u6982_u5FF5"><a href="#u6982_u5FF5" class="headerlink" title="概念"></a>概念</h2><p>VPN 全称 Virtual Private Network，一般用于从公共网络中访问内网资源，在天朝多用作<strong>梯子</strong>以翻越 <strong>GFW</strong>。让我做个更详细的<strong>比喻</strong>，你们想和远在美国的姑娘们通信，但是主要通信渠道都被长辈们把守着（他们想以此逼你只和国内的姑娘们相亲），于是出现了一批有志之士通过隐蔽渠道帮助你们和美国姑娘们送信（各种免费或付费 VPN 软件），然而他们经常由于送信量太大而暴露被长辈们抓住封杀。因此，想要和美国的姑娘们保持联系，雇佣一名专属信使是必然选择。</p>
 <a id="more"></a>
-<p>很久没有更新博客了，最近一直在<del>疯玩</del>忙着毕业没摸技术也没空思考，反倒是每次在火车上的那十几个小时总能收获高质量的阅读和感悟。其实我本质上也只是个自控力一般的三分钟热度型人，内里的懒惰和随性一直在与周遭环境给的压力和对技术的兴趣作着扩日持久的斗争，好习惯们也在不断地尝试培养和难以坚持中此消彼长，唯有对于未来的热切希冀如一直悬在头顶的<strong>达摩克利斯之剑</strong>保证我在短暂的沉溺之后继续向前挣扎。</p>
-<h2 id="u5927_u5B66_u56DB_u5E74"><a href="#u5927_u5B66_u56DB_u5E74" class="headerlink" title="大学四年"></a>大学四年</h2><p>相比与初高中平淡舒适的学习和生活，大学给了我各种各样的第一次体验。犹记得刚到时和康总在交大东路闲逛的迷茫，第一次离家这么远，第一次住集体宿舍，第一次去公共澡堂洗澡，第一次刷夜，第一次参加社团，第一次自己独立生活。大多数事情船到桥头自然直了，还有一些慢慢地适应了不适应也得适应，总的来说确实比高中累多了但是学到的东西也多多了。学习方面倒是一如既往地尽自己努力然后听天命，生活方面从一开始的略洁癖到后来也差不多被室友治好了，人际方面还是不太擅长也不太喜欢只是真心地对待自己小圈子里的每一个人，技术方面跟着几位室友大神走不被拉得太远我也很满足了。</p>
-<p>大一刚来时和室友还比较生疏，因为生活习惯也有一些小摩擦，投入时间更多的是社团的事情。期间在青团帮志愿者录制有声图书送给盲人社区，每周定期去食堂和教学楼收集失物统一进行招领；在阳服大家齐心协力为同学们向信息中心争取每个月更多的流量，又接着向后勤部门争取延后澡堂关门时间；作为学生会的一员还被拉着去给梦想合唱团第二季开播盛典当观众（要到了小撒的签名可是忘了合影 :[），去北京国际马拉松当志愿者在天安门维持秩序。这些都是以往不曾经历过或者只有在电视上才能看见的场景，有幸在北京这个充满奇迹的地方一一体验过了。不过我得承认即使在经历过一些有意义的事情后，我还是不太喜欢学生会那种条条框框效率低下的工作模式，所以大一之后我就果断退掉了所有社团。</p>
-<p>大二大三的生活就比较平淡以课业为主了，要么就是开学初死命抱住我的室友大腿们，要么只能接受每个学期快结束前的那几周的煎熬，不是在与组员无休止的开会协调中就是在一个人拖着几个甩不掉的酱油默默地玩命写代码。然后就是担心自己没有保研的成绩也肯定自己没有考研的想法，企图仗着自己还可以的英语成绩强行考出雅思成绩出国读研，最后总分够了却还是死在了口语和写作上，权衡利弊之后还是果断放弃了这条路。又回头参加大创和其他活动企图争取到哪怕一点点加分，可是相比于其他参加了各种工作拿了各种荣誉的同学还是杯水车薪。大概算了一下自己应该就是处于保研边缘那个位置，还受到学员争取的保研名额以及其他同学各种因素影响，然后大三快结束一直到大四开学的这段时间就是在惴惴不安中度过。</p>
-<p>大四算是幸运的一年，刚回到家就被北大夏令营召回，面试连时间复杂度都答错了竟然还给过了，之后为了准备下学期可能的出国交换机会赶紧找了实习，开学之后保研结果也终于下来靠着实打实的成绩和各种运气也是保上了。实习期间没事就溜到公司边上大厦里的留学服务中心办手续，实习刚结束加拿大的留学之旅也顺利成行，在那边也是一边忙着生存忙着课程一边准备着国内的毕业设计，留学回国没多久就是毕业答辩，论文最后一点还是我在给我哥当伴郎的路途中完成的，最后也顺利毕业了！</p>
-<h2 id="u7ED3_u8BED"><a href="#u7ED3_u8BED" class="headerlink" title="结语"></a>结语</h2><p>这四年过的拥挤却热闹，躁动后也思考，散训月考大项目经历不少，开开心心一起丢节操。有傲娇班委，有超神学霸，有技术大牛，有闷骚逗比，我们聚在运动场／召唤师峡谷／天佑舞台上，我们散落到各自的回忆里去，犹记得那一声充满感情的召唤：</p>
-<p>骚年，晚上撸串儿去呀～</p>
-<p><img src="/images/%E4%B8%8D%E5%A6%82%E8%B7%B3%E8%88%9E.jpg" alt="不如跳舞"></p>
+<h2 id="u4E70_u4E70_u4E70"><a href="#u4E70_u4E70_u4E70" class="headerlink" title="买买买"></a>买买买</h2><p>当然相比于购买付费 VPN 直接使用，自己搭建 VPN 会相对复杂一些，但是看标题就知道没有任何技术难度，而且价格较低、独占带宽和个人服务器等优势还是有吸引力的。首先需要购买一台 VPS（可以视作性价比比较高的小型服务器）作为你的专属信使，然后在你需要翻墙的设备包括电脑端和手机端安装上适当的代理软件帮助你和信使对上接头暗号，安装配置成功之后就可以随时随地看到外面的世界了～</p>
+<p>VPS 的话我推荐的是<a href="https://bandwagonhost.com" target="_blank" rel="external">搬瓦工</a>，老牌子相对稳定，最低配置即可性价比也高，支持支付宝购买方便，关键是它提供的一键安装 Shadowsocks 的功能使得零代码搭建 VPN 成为可能，这个后面细讲。购买步骤也不复杂：注册个账号然后回到首页选择 $2.99 每月的最低配置 10G VPS。点击 Order Now 进入购买页面，也就是选择一下是月付还是年付啊服务器位于美国东海岸还是西海岸啊，值得注意的是在这个页面有一个给开发者的<del>蚊子腿</del>小惊喜，在网页源代码（请按 F12）里面有一个<strong>优惠码</strong>可以在之后支付时使用，额度在 3% 左右还可以刷的哟。</p>
+<p><img src="/images/%E8%B4%AD%E4%B9%B0%E9%A1%B5%E9%9D%A2.png" alt="购买页面"></p>
+<p>支付方式选择 Credit Card and AliPay (Stripe) 然后在订单中选择支付宝输入邮箱就会收到验证码，支付完成就买好了！</p>
+<p><img src="/images/%E6%94%AF%E4%BB%98%E9%A1%B5%E9%9D%A2.png" alt="支付页面"></p>
+<h2 id="u88C5_u88C5_u88C5"><a href="#u88C5_u88C5_u88C5" class="headerlink" title="装装装"></a>装装装</h2><p>找到刚刚购买好的服务器，点击 KiwiVM Control Panel 进入管理页面。</p>
+<p><img src="/images/%E7%AE%A1%E7%90%86%E9%A1%B5%E9%9D%A2.png" alt="管理页面"></p>
+<p>额小伙不要犯怵，如果不需要用到服务器的其他功能我们不会来第二次的 :]，拉到最下 Shadowsocks Server，点击右边的 Install，然后一大串鬼东西过去之后就安装好了，是不是很简单，<del>比香港记者还快哦</del>！然后本页面就自带了接下来安装 Shdowsocks 的教程，下载安装 <a href="/images/Shadowsocks-win7.exe">Shadowsocks.exe</a> 然后把暗号一一对上。填写完成以后就启动试试吧，<a href="https://www.youtube.com" target="_blank" rel="external">Youtube</a> 中等画质也能流畅哦～</p>
+<p><img src="/images/%E9%85%8D%E7%BD%AE%E9%A1%B5%E9%9D%A2.png" alt="配置页面"></p>
+<p>手机端同理也只需要安装 Shadowsockets 类的代理软件，填上对应的暗号就能使用了，iOS 端我目前在使用 Shadowrocket，安卓端的话好像有 Lantern 可以试试。下面是目前我的服务器配置信息，有需要的同学们可以先试用，不保证一直有效哦：</p>
+<p><img src="/images/%E6%9C%8D%E5%8A%A1%E5%99%A8.png" alt="服务器"></p>
 
       
     </div>
@@ -340,7 +345,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/一点人生经验/" rel="tag">#一点人生经验</a>
+            <a href="/tags/实用/" rel="tag">#实用</a>
           
         </div>
       
@@ -349,17 +354,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/25/2001-A-Space-Odyssey/" rel="next" title="2001: A Space Odyssey">
-                <i class="fa fa-chevron-left"></i> 2001: A Space Odyssey
+              <a href="/2016/06/23/毕业回首四年/" rel="next" title="毕业回首四年">
+                <i class="fa fa-chevron-left"></i> 毕业回首四年
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/25/零代码搭建VPN/" rel="prev" title="零代码搭建 VPN">
-                零代码搭建 VPN <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -511,7 +512,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u524D_u8A00"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5927_u5B66_u56DB_u5E74"><span class="nav-number">2.</span> <span class="nav-text">大学四年</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7ED3_u8BED"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u6982_u5FF5"><span class="nav-number">1.</span> <span class="nav-text">概念</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4E70_u4E70_u4E70"><span class="nav-number">2.</span> <span class="nav-text">买买买</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u88C5_u88C5_u88C5"><span class="nav-number">3.</span> <span class="nav-text">装装装</span></a></li></ol></div>
             
           </div>
         </section>
