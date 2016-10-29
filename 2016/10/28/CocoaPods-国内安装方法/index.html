@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="布白">
 <meta property="og:description" content="CocoaPods 国内安装方法但凡学习新技术，从安装到教程去官网是最好的，可是当我开着 VPN 去下载 CocoaPods 还是半天没反应的时候，就只能走歪门邪道了 = =
 因为 Mac 已经有了 Ruby 环境（Mac 基本上什么环境都有），直接终端查看 Ruby 源：">
-<meta property="og:updated_time" content="2016-10-28T12:17:53.000Z">
+<meta property="og:updated_time" content="2016-10-29T04:21:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CocoaPods 国内安装方法">
 <meta name="twitter:description" content="CocoaPods 国内安装方法但凡学习新技术，从安装到教程去官网是最好的，可是当我开着 VPN 去下载 CocoaPods 还是半天没反应的时候，就只能走歪门邪道了 = =
@@ -336,9 +336,9 @@
 <p>目前（2016 年 10 月）似乎已经转移到了阿里云，我们把它添加进去，然后开始下载：</p>
 <p><code>gem sources -a http://rubygems-china.oss.aliyuncs.com</code><br><code>sudo gem install cocoapods</code></p>
 <p>稍等一会应该就安装好了，顺便感谢<a href="http://rubygems-china.oss.aliyuncs.com" target="_blank" rel="external"><del>老司机</del>维护者</a>，具体使用无需赘述，官网有着最好的文档。</p>
-<h2 id="Pod_install__u5361_u4F4F_u95EE_u9898"><a href="#Pod_install__u5361_u4F4F_u95EE_u9898" class="headerlink" title="Pod install 卡住问题"></a>Pod install 卡住问题</h2><p>如果使用 <code>pod install</code> 命令卡在 <code>Setting up CocoaPods master repo</code> 这里，这并不是网络原因的问题，而是在下载设置它自己的仓库（话说下载的时候什么信息都不显示很容易让人以为是网络卡住了诶）。</p>
+<h2 id="Pod_install__u5361_u4F4F_u95EE_u9898"><a href="#Pod_install__u5361_u4F4F_u95EE_u9898" class="headerlink" title="Pod install 卡住问题"></a>Pod install 卡住问题</h2><p>如果使用 <code>pod install</code> 或者 <code>pod setup</code> 命令卡在 <code>Setting up CocoaPods master repo</code> 这里，这并不是网络原因的问题，而是在初始化 Clone 索引库（话说下载的时候什么信息都不显示很容易让人以为是网络卡住了诶）。</p>
 <p>可以在 <code>~/.cocoapods</code> 目录下使用 <code>du -sh</code> 命令查看到它确实是在下载内容。</p>
-<p>或者直接使用 <code>pod install --verbose</code> 可以看到过程（好像并没有什么用 = =）。</p>
+<p>或者直接使用 <code>pod install --verbose</code> 可以看到过程（好像并没有什么用 = =）。附上 <a href="http://stackoverflow.com/questions/21022638/pod-install-is-staying-on-setting-up-cocoapods-master-repo" target="_blank" rel="external">Stack Overflow</a> 冷笑话一则。</p>
 
       
     </div>
