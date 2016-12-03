@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="布白">
 <meta property="og:description" content="第一次 App Store 上架在一时兴起加入了北京大学研究生会的掌上燕园开发小组之后，由于 iOS 组的学长们都年纪大了研三了，所以为了更好的香火传续，唯一的新人我就当上了组长，我本来只是想来打个酱油保持写 iOS 的手感而已的啊（还有这好歹也是给学校干活怎么没人来和我聊聊补助的事情呢 2333）。">
 <meta property="og:image" content="http://dpc11.cn/images/%E5%90%83%E6%83%8A.jpg">
-<meta property="og:updated_time" content="2016-12-02T11:11:17.000Z">
+<meta property="og:updated_time" content="2016-12-03T06:27:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第一次 App Store 上架">
 <meta name="twitter:description" content="第一次 App Store 上架在一时兴起加入了北京大学研究生会的掌上燕园开发小组之后，由于 iOS 组的学长们都年纪大了研三了，所以为了更好的香火传续，唯一的新人我就当上了组长，我本来只是想来打个酱油保持写 iOS 的手感而已的啊（还有这好歹也是给学校干活怎么没人来和我聊聊补助的事情呢 2333）。">
@@ -324,11 +324,17 @@
       
         <h2 id="u7B2C_u4E00_u6B21_App_Store__u4E0A_u67B6"><a href="#u7B2C_u4E00_u6B21_App_Store__u4E0A_u67B6" class="headerlink" title="第一次 App Store 上架"></a>第一次 App Store 上架</h2><p>在一时兴起加入了北京大学研究生会的掌上燕园开发小组之后，由于 iOS 组的学长们都<del>年纪大了</del>研三了，所以为了更好的香火传续，唯一的新人我就当上了组长，我本来只是想来打个酱油保持写 iOS 的手感而已的啊（还有这好歹也是给学校干活怎么没人来和我聊聊补助的事情呢 2333）。</p>
 <p><img src="/images/%E5%90%83%E6%83%8A.jpg" alt="吃惊"><br><a id="more"></a></p>
-<p>对于 App 的证书部分，至今还没完全搞懂各种各样的证书和配置文件，这个等以后有机会自己从头开始负责一个项目的时候应该还会有一段艰难的路要走。目前项目用的是 automatically manage signing，主要的还是在本机上装好开发者的证书，感觉其他各种真机调试和发布等配置文件应该会逐渐被自动化配置取代，目前只需要在把开发者账户下的所有配置文件都给下下来就好了。</p>
-<p>首先进入开发者网站，在 iTunes Connect 创建一个新的 iOS App 发布，更新一下要发布的新版的各种信息。然后回到 Xcode，选择 Project - Archive 打包，然后再 Window - Organizer，在 iTunes Connect 认证的时候会很慢，关掉防火墙换个网络试试，认证完然后提交就行了。</p>
-<p>第一次提交到 iTunes Connect 被拒，没有把自己的职能设成管理因此没有及时收到被拒邮件，傻傻地等到半夜还没看见，睡一觉起来发现还 iTunes Connect 还没最新的 Build…被拒的原因是因为某个权限没有在 plist 里说明，google 之后改改就好了。</p>
-<p>Build 上去之后还可以用 TestFlight 来给内部成员发布内测，外部测试可邀请的人更多而且不需要加入内部成员，当然相应的限制就是需要审核，人少的话全部加到内部成员（25个名额）进行内部测试就行了。发布内测之后，对应的 Apple ID 会收到邮件邀请，装个 TesFlight 就可以内测了。</p>
-<p>测试没问题就可以提交审核了，其实在内测的同时也可以选择手动发版先进行审核，如果没有问题的话就可以直接发能节约些时间，当然有问题还是得取消掉再继续改动提交新的 Build，每次提交记得 Build+1 就好了。测试完成并准备好所有东西就可以提交审核然后等待了，这一版的提审时间是 2016年12月2日 星期五 下午4:33，看看什么时候能通过～</p>
+<h2 id="u5F00_u53D1_u8BC1_u4E66_u548C_u751F_u4EA7_u8BC1_u4E66_u4EE5_u53CA_u5404_u79CD_u914D_u7F6E_u6587_u4EF6"><a href="#u5F00_u53D1_u8BC1_u4E66_u548C_u751F_u4EA7_u8BC1_u4E66_u4EE5_u53CA_u5404_u79CD_u914D_u7F6E_u6587_u4EF6" class="headerlink" title="开发证书和生产证书以及各种配置文件"></a>开发证书和生产证书以及各种配置文件</h2><p>简书上这一篇 <a href="http://www.jianshu.com/p/9d9e3699515e" target="_blank" rel="external">iOS开发证书与配置文件的使用</a> 把流程和概念写得很清楚还附有截图，我就不重复造轮子了。简要梳理一下概念，这一堆东西主要分成两部分：</p>
+<ul>
+<li><p>开发证书和生产证书（Certificates），作为一名合法付费的开发者的签名，这两个证书的区别就是一个是用来开发调试用一个是用来发布应用，其本质都是创建了一对 Key Pair（公钥／私钥）。开发证书是开发一个上架 App 必备的，需要导入到 Xcode 才能日常开发真机调试。而生产证书的话，其实发布过程从下一节来看根本没有涉及到任何证书问题，不过还可能用在友盟推送等地方。</p>
+</li>
+<li><p>各种配置文件（Provisioning Profiles），其实从 Xcode7 之后就可以 Automatically manage signing 了。感觉以往添加 UDID 然后又要重新生成各种配置文件的日子要过去了，开发的话有证书就够了，如果需要内测也可以用官方的 TestFlight，不再需要配各种配置文件了。</p>
+</li>
+</ul>
+<h2 id="App_Store__u4E0A_u67B6"><a href="#App_Store__u4E0A_u67B6" class="headerlink" title="App Store 上架"></a>App Store 上架</h2><p>首先进入开发者网站，在 iTunes Connect 创建一个新的 iOS App 发布，更新一下要发布的新版的各种信息。然后回到 Xcode，选择 Project - Archive 打包，然后再 Window - Organizer，在 iTunes Connect 认证的时候会很慢，关掉防火墙换个网络试试，认证完然后提交就行了。</p>
+<p>第一次提交到 iTunes Connect 被拒，没有把自己的职能设成管理因此没有及时收到被拒邮件，傻傻地等到半夜都没有，睡一觉起来发现还 iTunes Connect 还没最新的 Build…被拒的原因是因为某个权限没有在 plist 里说明，google 之后改改就好了。</p>
+<p>Build 上去之后还可以用 TestFlight 来给内部成员发内测版本，内部测试无需审核，外部测试可邀请的人更多而且不需要加入 membership，相应的限制就是需要审核，人少的话全部加到内部成员（25个名额）就行了。发布内测之后，对应的 Apple ID 会收到邮件邀请，装个 TesFlight 就可以内测了。</p>
+<p>测试没问题就可以提交审核了，其实在内测的同时也可以选择手动发版先进行审核，如果没有问题的话就可以直接发能节约些时间，当然有问题还是得继续改动再提交新的 Build，每次提交记得 Build+1 就好了。测试完成并准备好所有东西就可以提交审核然后等待了，这一版的提审时间是周五下午四点然后第二天上午十点起来已经过审了，而且过审时间是 6h 前，release 之后大概 20min App Store 就更新了。</p>
 
       
     </div>
@@ -541,7 +547,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u7B2C_u4E00_u6B21_App_Store__u4E0A_u67B6"><span class="nav-number">1.</span> <span class="nav-text">第一次 App Store 上架</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u7B2C_u4E00_u6B21_App_Store__u4E0A_u67B6"><span class="nav-number">1.</span> <span class="nav-text">第一次 App Store 上架</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5F00_u53D1_u8BC1_u4E66_u548C_u751F_u4EA7_u8BC1_u4E66_u4EE5_u53CA_u5404_u79CD_u914D_u7F6E_u6587_u4EF6"><span class="nav-number">2.</span> <span class="nav-text">开发证书和生产证书以及各种配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#App_Store__u4E0A_u67B6"><span class="nav-number">3.</span> <span class="nav-text">App Store 上架</span></a></li></ol></div>
             
           </div>
         </section>
