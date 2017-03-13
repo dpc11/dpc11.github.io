@@ -92,7 +92,7 @@
 <meta property="og:site_name" content="布白">
 <meta property="og:description" content="Ubuntu 14 MongoDB 3.0 环境搭建MongoDB 官网：Install MongoDB on Ubuntu
 这里是在阿里云主机 ECS 上搭建的 MongoDB 数据库，直接购买 MongoDB 数据库十分昂贵，不过自己做实验用也可以试试按量付费吧。">
-<meta property="og:updated_time" content="2017-03-13T09:01:11.000Z">
+<meta property="og:updated_time" content="2017-03-13T09:12:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ubuntu 14 MongoDB 3.0 环境搭建">
 <meta name="twitter:description" content="Ubuntu 14 MongoDB 3.0 环境搭建MongoDB 官网：Install MongoDB on Ubuntu
@@ -330,7 +330,7 @@
 <p>首先需要在自己的 Python 开发环境里安装 PyMongo 模块，我这里是 Python3 环境（不过 Pyhton 3.5 好像自带了？）：</p>
 <p><code>pip3 install pymongo</code></p>
 <p>不过其实 MongoDB 自带了将 JSON 文件直接导入成数据库的功能，从命令行或者是可视化工具可以导入，确实很好用哈～</p>
-<h2 id="u53EF_u89C6_u5316_u5DE5_u5177_Studio_3T"><a href="#u53EF_u89C6_u5316_u5DE5_u5177_Studio_3T" class="headerlink" title="可视化工具 Studio 3T"></a>可视化工具 Studio 3T</h2><p><a href="https://studio3t.com" target="_blank" rel="external">MongoChef 官网</a></p>
+<h2 id="u53EF_u89C6_u5316_u5DE5_u5177_Studio_3T"><a href="#u53EF_u89C6_u5316_u5DE5_u5177_Studio_3T" class="headerlink" title="可视化工具 Studio 3T"></a>可视化工具 Studio 3T</h2><p><a href="https://studio3t.com" target="_blank" rel="external">Studio 3T 官网</a></p>
 <p>MongoDB 默认启动时是没有用户名和密码的。无论是使用命令行还是可视化工具从远端连接 mongoDB 数据库时，记得修改配置文件 <code>/etc/mongod.conf</code> 使得 MongoDB 允许来远端的连接：</p>
 <p><code>bindIp: 127.0.0.1</code> -&gt; <code>bindIp: 0.0.0.0</code></p>
 <h2 id="MongoDB_3-0__u7528_u6237_u548C_u6743_u9650"><a href="#MongoDB_3-0__u7528_u6237_u548C_u6743_u9650" class="headerlink" title="MongoDB 3.0 用户和权限"></a>MongoDB 3.0 用户和权限</h2><p>当然这样非常不安全，所以还是建议在在启动 MongoDB 时开启验证 <code>mongod --auth</code>，当然开启验证就需要设计到用户和权限的问题了。首先你需要创建一个能够管理所有用户的 admin 用户，然后还要对于数据库创建拥有读写权限的用户，当然偷懒的话就把这些权限全加给 admin 用户就好了，可以参照：</p>
