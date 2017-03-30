@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="一点人生经验," />
+  <meta name="keywords" content="NLP," />
 
 
 
@@ -84,18 +84,16 @@
 
 
 
-<meta name="description" content="前言最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。">
+<meta name="description" content="通过 TF-IDF 和余弦算法来计算中文文本相似度因为在海量数据处理课程上布置了一个计算中文文档相似度的作业，在网上找了一圈没有得到比较直接又漂亮的结局方案，不得已自己动手了 :]。当然也不可能自己从零开始，那就自己去找轮子以及组装轮子的办法咯～">
 <meta property="og:type" content="article">
-<meta property="og:title" content="毕业回首四年">
-<meta property="og:url" content="http://dpc11.cn/2016/06/23/毕业回首四年/index.html">
+<meta property="og:title" content="通过 TF-IDF 和余弦算法来计算中文文本相似度">
+<meta property="og:url" content="http://dpc11.cn/2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/index.html">
 <meta property="og:site_name" content="布白">
-<meta property="og:description" content="前言最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。">
-<meta property="og:image" content="http://dpc11.cn/images/%E4%BA%94%E7%8F%AD.jpg">
-<meta property="og:image" content="http://dpc11.cn/images/%E4%B8%8D%E5%A6%82%E8%B7%B3%E8%88%9E.jpg">
-<meta property="og:updated_time" content="2016-08-07T04:14:37.000Z">
+<meta property="og:description" content="通过 TF-IDF 和余弦算法来计算中文文本相似度因为在海量数据处理课程上布置了一个计算中文文档相似度的作业，在网上找了一圈没有得到比较直接又漂亮的结局方案，不得已自己动手了 :]。当然也不可能自己从零开始，那就自己去找轮子以及组装轮子的办法咯～">
+<meta property="og:updated_time" content="2017-03-30T03:13:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="毕业回首四年">
-<meta name="twitter:description" content="前言最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。">
+<meta name="twitter:title" content="通过 TF-IDF 和余弦算法来计算中文文本相似度">
+<meta name="twitter:description" content="通过 TF-IDF 和余弦算法来计算中文文本相似度因为在海量数据处理课程上布置了一个计算中文文档相似度的作业，在网上找了一圈没有得到比较直接又漂亮的结局方案，不得已自己动手了 :]。当然也不可能自己从零开始，那就自己去找轮子以及组装轮子的办法咯～">
 
 
 
@@ -116,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://dpc11.cn/2016/06/23/毕业回首四年/"/>
+  <link rel="canonical" href="http://dpc11.cn/2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/"/>
 
-  <title> 毕业回首四年 | 布白 </title>
+  <title> 通过 TF-IDF 和余弦算法来计算中文文本相似度 | 布白 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -248,7 +246,7 @@
             
             
               
-                毕业回首四年
+                通过 TF-IDF 和余弦算法来计算中文文本相似度
               
             
           </h1>
@@ -260,8 +258,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-06-23T09:47:42+08:00" content="2016-06-23">
-              2016-06-23
+            <time itemprop="dateCreated" datetime="2017-03-30T11:01:04+08:00" content="2017-03-30">
+              2017-03-30
             </time>
           </span>
 
@@ -274,8 +272,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/生活/" itemprop="url" rel="index">
-                    <span itemprop="name">生活</span>
+                  <a href="/categories/研究/" itemprop="url" rel="index">
+                    <span itemprop="name">研究</span>
                   </a>
                 </span>
 
@@ -290,8 +288,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/06/23/毕业回首四年/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/06/23/毕业回首四年/" itemprop="commentsCount"></span>
+                <a href="/2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -301,7 +299,7 @@
 
           
           
-             <span id="/2016/06/23/毕业回首四年/" class="leancloud_visitors" data-flag-title="毕业回首四年">
+             <span id="/2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/" class="leancloud_visitors" data-flag-title="通过 TF-IDF 和余弦算法来计算中文文本相似度">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -323,17 +321,25 @@
       
 
       
-        <h2 id="u524D_u8A00"><a href="#u524D_u8A00" class="headerlink" title="前言"></a>前言</h2><p>最近看了一次 TED 的演讲，也是思考自我到底是什么（我从未接触过哲学，这里只以最质朴的眼光来看问题 :]），最通俗的看法自我就是承载着经历和回忆的这具身体，而其提出的看法认为经历与回忆等等和身体实体共同构成了自我，身体实体并不比感觉起来虚幻一些的经历和回忆更重要。所以在我来看，这四年并不只是我经历过，而是已经成为了我生命的一部分，融入了我身上拖负着的世界里去。</p>
-<p><img src="/images/%E4%BA%94%E7%8F%AD.jpg" alt="五班"></p>
-<a id="more"></a>
-<p>很久没有更新博客了，最近一直在<del>疯玩</del>忙着毕业没摸技术也没空思考，反倒是每次在火车上的那十几个小时总能收获高质量的阅读和感悟。其实我本质上也只是个自控力一般的三分钟热度型人，内里的懒惰和随性一直在与周遭环境给的压力和对技术的兴趣作着扩日持久的斗争，好习惯们也在不断地尝试培养和难以坚持中此消彼长，唯有对于未来的热切希冀如一直悬在头顶的<strong>达摩克利斯之剑</strong>保证我在短暂的沉溺之后继续向前挣扎。</p>
-<h2 id="u5927_u5B66_u56DB_u5E74"><a href="#u5927_u5B66_u56DB_u5E74" class="headerlink" title="大学四年"></a>大学四年</h2><p>相比与初高中平淡舒适的学习和生活，大学给了我各种各样的第一次体验。犹记得刚到时和康总在交大东路闲逛的迷茫，第一次离家这么远，第一次住集体宿舍，第一次去公共澡堂洗澡，第一次刷夜，第一次参加社团，第一次自己独立生活。大多数事情船到桥头自然直了，还有一些慢慢地适应了不适应也得适应，总的来说确实比高中累多了但是学到的东西也多多了。学习方面倒是一如既往地尽自己努力然后听天命，生活方面从一开始的略洁癖到后来也差不多被室友治好了，人际方面还是不太擅长也不太喜欢只是真心地对待自己小圈子里的每一个人，技术方面跟着几位室友大神走不被拉得太远我也很满足了。</p>
-<p>大一刚来时和室友还比较生疏，因为生活习惯也有一些小摩擦，投入时间更多的是社团的事情。期间在青团帮志愿者录制有声图书送给盲人社区，每周定期去食堂和教学楼收集失物统一进行招领；在阳服大家齐心协力为同学们向信息中心争取每个月更多的流量，又接着向后勤部门争取延后澡堂关门时间；作为学生会的一员还被拉着去给梦想合唱团第二季开播盛典当观众（要到了小撒的签名可是忘了合影 :[），去北京国际马拉松当志愿者在天安门维持秩序。这些都是以往不曾经历过或者只有在电视上才能看见的场景，有幸在北京这个充满奇迹的地方一一体验过了。不过我得承认即使在经历过一些有意义的事情后，我还是不太喜欢学生会那种条条框框效率低下的工作模式，所以大一之后我就果断退掉了所有社团。</p>
-<p>大二大三的生活就比较平淡以课业为主了，要么就是开学初死命抱住我的室友大腿们，要么只能接受每个学期快结束前的那几周的煎熬，不是在与组员无休止的开会协调中就是在一个人拖着几个甩不掉的酱油默默地玩命写代码。然后就是担心自己没有保研的成绩也肯定自己没有考研的想法，企图仗着自己还可以的英语成绩强行考出雅思成绩出国读研，最后总分够了却还是死在了口语和写作上，权衡利弊之后还是果断放弃了这条路。又回头参加大创和其他活动企图争取到哪怕一点点加分，可是相比于其他参加了各种工作拿了各种荣誉的同学还是杯水车薪。大概算了一下自己应该就是处于保研边缘那个位置，还受到学员争取的保研名额以及其他同学各种因素影响，然后大三快结束一直到大四开学的这段时间就是在惴惴不安中度过。</p>
-<p>大四算是幸运的一年，刚回到家就被北大夏令营召回，面试连时间复杂度都答错了竟然还给过了，之后为了准备下学期可能的出国交换机会赶紧找了实习，开学之后保研结果也终于下来靠着实打实的成绩和各种运气也是保上了。实习期间没事就溜到公司边上大厦里的留学服务中心办手续，实习刚结束加拿大的留学之旅也顺利成行，在那边也是一边忙着生存忙着课程一边准备着国内的毕业设计，留学回国没多久就是毕业答辩，论文最后一点还是我在给我哥当伴郎的路途中完成的，最后也顺利毕业了！</p>
-<h2 id="u7ED3_u8BED"><a href="#u7ED3_u8BED" class="headerlink" title="结语"></a>结语</h2><p>这四年过的拥挤却热闹，躁动后也思考，散训月考大项目经历不少，开开心心一起丢节操。有傲娇班委，有超神学霸，有技术大牛，有闷骚逗比，我们聚在运动场／召唤师峡谷／天佑舞台上，我们散落到各自的回忆里去，犹记得那一声充满感情的召唤：</p>
-<p>骚年，晚上撸串儿去呀～</p>
-<p><img src="/images/%E4%B8%8D%E5%A6%82%E8%B7%B3%E8%88%9E.jpg" alt="不如跳舞"></p>
+        <h2 id="u901A_u8FC7_TF-IDF__u548C_u4F59_u5F26_u7B97_u6CD5_u6765_u8BA1_u7B97_u4E2D_u6587_u6587_u672C_u76F8_u4F3C_u5EA6"><a href="#u901A_u8FC7_TF-IDF__u548C_u4F59_u5F26_u7B97_u6CD5_u6765_u8BA1_u7B97_u4E2D_u6587_u6587_u672C_u76F8_u4F3C_u5EA6" class="headerlink" title="通过 TF-IDF 和余弦算法来计算中文文本相似度"></a>通过 TF-IDF 和余弦算法来计算中文文本相似度</h2><p>因为在海量数据处理课程上布置了一个计算中文文档相似度的作业，在网上找了一圈没有得到比较直接又漂亮的结局方案，不得已自己动手了 :]。当然也不可能自己从零开始，那就自己去找轮子以及组装轮子的办法咯～<br><a id="more"></a></p>
+<p>首先明确作业要求所使用来计算文本相似度的是<strong>向量空间模型</strong>，以我的理解来说这应该算是其中比较基础而简单的一种计算文本相似度的模型，具体看 Wiki <a href="https://zh.wikipedia.org/wiki/向量空間模型" target="_blank" rel="external">向量空间模型</a> 就好了。然后在附录里发现了一个相关的 Python 开源库 <a href="http://radimrehurek.com/gensim/" target="_blank" rel="external">Gensim</a>，这还不是美滋滋～</p>
+<p>大致看了一下 Gensim，主要是提供的对于原始文本的向量化处理、TF-IDF 的计算以及一些更深入的潜在语义分析算法等功能，基本上前两个功能就够我们使用了，整个教程也很简短很快能过一遍。</p>
+<h2 id="u5927_u81F4_u601D_u8DEF"><a href="#u5927_u81F4_u601D_u8DEF" class="headerlink" title="大致思路"></a>大致思路</h2><p>结合老师课上讲的内容以及这篇 <a href="http://www.ruanyifeng.com/blog/2013/03/cosine_similarity.html" target="_blank" rel="external">TF-IDF与余弦相似性的应用（二）：找出相似文章</a> 博客，大概理清了使用向量空间模型计算中文文本相似度的步骤：</p>
+<ul>
+<li><p>中文分词（Python 上比较好用的有 <a href="https://github.com/fxsjy/jieba" target="_blank" rel="external">Jieba</a>），就相当于英文使用天然的空格进行的分词操作。</p>
+</li>
+<li><p>构建“词袋”（bag-of-words）。对于短文章来说，可能取要比较的两个文本的分词结果集合就行；但是对于长文章来说这显然是不现实的，那就需要使用 TF-IDF 来分别提取有限特征词来组成关键词库。</p>
+</li>
+<li><p>以“词袋”为基础生成文本向量，这里一般是使用 TF-IDF 作为词在文档中的权重。</p>
+</li>
+<li><p>通过计算文本向量之间的<strong>余弦</strong>来衡量相似度（衡量标准有很多，这里取向量空间模型中的标准方法）。</p>
+</li>
+</ul>
+<h2 id="u4EE3_u7801_u5B9E_u73B0"><a href="#u4EE3_u7801_u5B9E_u73B0" class="headerlink" title="代码实现"></a>代码实现</h2><p>因为拿到的是已经标注过并分好词的语料，所以中文分词这一步骤就不需要自己做了（但其实这是比较复杂的一部分）。我这边的主要的工作就是把语料处理成文档词组列表，后面基本就可以丢给 Gensim 自行处理了。代码以及注释请移步 <a href="https://github.com/DPC11/TextSimilarity" target="_blank" rel="external">GitHub</a>。</p>
+<p>最后的试验结果是基于平均 200 词的 3200 篇短文章，使用的词袋大小约为 33000，计算文章两两之间的相似度总共耗时约 45min。因为主要计算过程是直接使用了 Gensim 库，所以暂时也没有什么好的优化方法。</p>
+<p>语料是老师给的也不好直接放出来，就贴两个找到的相似度比较高的文本的部分内容吧，效果还是不错的：</p>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">19980101</span>-<span class="number">01</span>-<span class="number">001</span>-<span class="number">001</span><span class="regexp">/m  迈向/</span>v  充满<span class="regexp">/v  希望/</span>n  的<span class="regexp">/u  新/</span>a  世纪<span class="regexp">/n  ——/</span>w  一九九八年<span class="regexp">/t  新年/</span>t  讲话<span class="regexp">/n  （/</span>w  附<span class="regexp">/v  图片/</span>n  １<span class="regexp">/m  张/</span>q  ）/w  </span><br><span class="line"><span class="number">19980101</span>-<span class="number">01</span>-<span class="number">001</span>-<span class="number">002</span><span class="regexp">/m  中共中央/</span>nt  总书记<span class="regexp">/n  、/</span>w  国家<span class="regexp">/n  主席/</span>n  江<span class="regexp">/nr  泽民/</span>nr  </span><br><span class="line"><span class="number">19980101</span>-<span class="number">01</span>-<span class="number">001</span>-<span class="number">003</span><span class="regexp">/m  （/</span>w  一九九七年<span class="regexp">/t  十二月/</span>t  三十一日<span class="regexp">/t  ）/</span>w  </span><br><span class="line"><span class="number">19980101</span>-<span class="number">01</span>-<span class="number">001</span>-<span class="number">004</span><span class="regexp">/m  １２月/</span>t  ３１日<span class="regexp">/t  ，/</span>w  中共中央<span class="regexp">/nt  总书记/</span>n  、<span class="regexp">/w  国家/</span>n  主席<span class="regexp">/n  江/</span>nr  泽民<span class="regexp">/nr  发表/</span>v  １９９８年<span class="regexp">/t  新年/</span>t  讲话<span class="regexp">/n  《/</span>w  迈向<span class="regexp">/v  充满/</span>v  希望<span class="regexp">/n  的/</span>u  新<span class="regexp">/a  世纪/</span>n  》<span class="regexp">/w  。/</span>w  （<span class="regexp">/w  新华社/</span>nt  记者<span class="regexp">/n  兰/</span>nr  红光<span class="regexp">/nr  摄/</span>Vg  ）/w  </span><br><span class="line"><span class="number">19980101</span>-<span class="number">01</span>-<span class="number">001</span>-<span class="number">005</span><span class="regexp">/m  同胞/</span>n  们<span class="regexp">/k  、/</span>w  朋友<span class="regexp">/n  们/</span>k  、<span class="regexp">/w  女士/</span>n  们<span class="regexp">/k  、/</span>w  先生<span class="regexp">/n  们/</span>k  ：/w  </span><br><span class="line"><span class="number">19980101</span>-<span class="number">01</span>-<span class="number">001</span>-<span class="number">006</span><span class="regexp">/m  在/</span>p  １９９８年<span class="regexp">/t  来临/</span>v  之际<span class="regexp">/f  ，/</span>w  我<span class="regexp">/r  十分/</span>m  高兴<span class="regexp">/a  地/</span>u  通过<span class="regexp">/p  中央/</span>n  人民<span class="regexp">/n  广播/</span>vn  电台<span class="regexp">/n  、/</span>w  中国<span class="regexp">/ns  国际/</span>n  广播<span class="regexp">/vn  电台/</span>n  和<span class="regexp">/c  中央/</span>n  电视台<span class="regexp">/n  ，/</span>w  向<span class="regexp">/p  全国/</span>n  各族<span class="regexp">/r  人民/</span>n  ，<span class="regexp">/w  向/</span>p  香港<span class="regexp">/ns  特别/</span>a  行政区<span class="regexp">/n  同胞/</span>n  、<span class="regexp">/w  澳门/</span>ns  和<span class="regexp">/c  台湾/</span>ns  同胞<span class="regexp">/n  、/</span>w  海外<span class="regexp">/s  侨胞/</span>n  ，<span class="regexp">/w  向/</span>p  世界<span class="regexp">/n  各国/</span>r  的<span class="regexp">/u  朋友/</span>n  们<span class="regexp">/k  ，/</span>w  致以<span class="regexp">/v  诚挚/</span>a  的<span class="regexp">/u  问候/</span>vn  和<span class="regexp">/c  良好/</span>a  的<span class="regexp">/u  祝愿/</span>vn  ！/w</span><br></pre></td></tr></table></figure>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">19980128</span>-<span class="number">01</span>-<span class="number">002</span>-<span class="number">001</span><span class="regexp">/m  在/</span>p  春节<span class="regexp">/t  团拜会/</span>n  上<span class="regexp">/f  的/</span>u  讲话<span class="regexp">/n  （/</span>w  附<span class="regexp">/v  图片/</span>n  １<span class="regexp">/m  张/</span>q  ）/w  </span><br><span class="line"><span class="number">19980128</span>-<span class="number">01</span>-<span class="number">002</span>-<span class="number">002</span><span class="regexp">/m  李/</span>nr  鹏/nr  </span><br><span class="line"><span class="number">19980128</span>-<span class="number">01</span>-<span class="number">002</span>-<span class="number">003</span><span class="regexp">/m  （/</span>w  １９９８年<span class="regexp">/t  １月/</span>t  ２７日<span class="regexp">/t  ）/</span>w  </span><br><span class="line"><span class="number">19980128</span>-<span class="number">01</span>-<span class="number">002</span>-<span class="number">004</span><span class="regexp">/m  李/</span>nr  鹏<span class="regexp">/nr  总理/</span>n  在<span class="regexp">/p  春节/</span>t  团拜会<span class="regexp">/n  上/</span>f  讲话<span class="regexp">/v  。/</span>w  （<span class="regexp">/w  新华社/</span>nt  记者<span class="regexp">/n  兰/</span>nr  红光<span class="regexp">/nr  摄/</span>Vg  ）/w  </span><br><span class="line"><span class="number">19980128</span>-<span class="number">01</span>-<span class="number">002</span>-<span class="number">005</span><span class="regexp">/m  朋友/</span>n  们<span class="regexp">/k  ，/</span>w  同志<span class="regexp">/n  们/</span>k  ：/w  </span><br><span class="line"><span class="number">19980128</span>-<span class="number">01</span>-<span class="number">002</span>-<span class="number">006</span><span class="regexp">/m  五谷丰登/</span>i  的<span class="regexp">/u  牛年/</span>t  即将<span class="regexp">/d  过去/</span>v  ，<span class="regexp">/w  生机勃勃/</span>l  的<span class="regexp">/u  虎年/</span>t  就要<span class="regexp">/d  来临/</span>v  ，<span class="regexp">/w  全国/</span>n  人民<span class="regexp">/n  沉浸/</span>v  在<span class="regexp">/p  节日/</span>n  的<span class="regexp">/u  喜悦/</span>an  之中<span class="regexp">/f  。/</span>w  在<span class="regexp">/p  这/</span>r  辞旧迎新<span class="regexp">/l  之际/</span>f  ，<span class="regexp">/w  我们/</span>r  欢聚一堂<span class="regexp">/i  ，/</span>w  共<span class="regexp">/d  庆/</span>Vg  传统<span class="regexp">/n  的/</span>u  新春<span class="regexp">/t  佳节/</span>n  。/w</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -356,7 +362,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/一点人生经验/" rel="tag">#一点人生经验</a>
+            <a href="/tags/NLP/" rel="tag">#NLP</a>
           
         </div>
       
@@ -365,17 +371,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/25/2001-A-Space-Odyssey/" rel="next" title="2001: A Space Odyssey">
-                <i class="fa fa-chevron-left"></i> 2001: A Space Odyssey
+              <a href="/2016/12/27/Ubuntu-14-MongoDB-3-0-环境搭建/" rel="next" title="Ubuntu 14 MongoDB 3.0 环境搭建">
+                <i class="fa fa-chevron-left"></i> Ubuntu 14 MongoDB 3.0 环境搭建
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/08/25/零代码搭建VPN/" rel="prev" title="零代码搭建 VPN">
-                零代码搭建 VPN <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -390,10 +392,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/06/23/毕业回首四年/"
-     data-title="毕业回首四年"
+        <div class="ds-share flat" data-thread-key="2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/"
+     data-title="通过 TF-IDF 和余弦算法来计算中文文本相似度"
      data-content=""
-     data-url="http://dpc11.cn/2016/06/23/毕业回首四年/">
+     data-url="http://dpc11.cn/2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -420,8 +422,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/06/23/毕业回首四年/"
-           data-title="毕业回首四年" data-url="http://dpc11.cn/2016/06/23/毕业回首四年/">
+      <div class="ds-thread" data-thread-key="2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/"
+           data-title="通过 TF-IDF 和余弦算法来计算中文文本相似度" data-url="http://dpc11.cn/2017/03/30/通过-TF-IDF-和余弦算法来计算中文文本相似度/">
       </div>
     
   </div>
@@ -550,7 +552,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u524D_u8A00"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5927_u5B66_u56DB_u5E74"><span class="nav-number">2.</span> <span class="nav-text">大学四年</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u7ED3_u8BED"><span class="nav-number">3.</span> <span class="nav-text">结语</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u901A_u8FC7_TF-IDF__u548C_u4F59_u5F26_u7B97_u6CD5_u6765_u8BA1_u7B97_u4E2D_u6587_u6587_u672C_u76F8_u4F3C_u5EA6"><span class="nav-number">1.</span> <span class="nav-text">通过 TF-IDF 和余弦算法来计算中文文本相似度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u5927_u81F4_u601D_u8DEF"><span class="nav-number">2.</span> <span class="nav-text">大致思路</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#u4EE3_u7801_u5B9E_u73B0"><span class="nav-number">3.</span> <span class="nav-text">代码实现</span></a></li></ol></div>
             
           </div>
         </section>
