@@ -90,7 +90,7 @@
 <meta property="og:url" content="http://dpc11.cn/2017/05/22/以同程旅游为例的爬虫入门/index.html">
 <meta property="og:site_name" content="布白">
 <meta property="og:description" content="以同程旅游为例的爬虫入门在海量数据处理课程中，我们需要自行爬取一些旅游网站上的旅游攻略并聚合到我们自己构建的搜索引擎中，我负责的是同城旅游中的游记。使用的爬虫框架是 Scrapy，简单来说，爬虫框架就是一个帮助你访问网页内容然后根据特定规则把需要的信息抽取出来的工具。">
-<meta property="og:updated_time" content="2017-05-22T10:37:21.000Z">
+<meta property="og:updated_time" content="2017-05-22T10:53:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="以同程旅游为例的爬虫入门">
 <meta name="twitter:description" content="以同程旅游为例的爬虫入门在海量数据处理课程中，我们需要自行爬取一些旅游网站上的旅游攻略并聚合到我们自己构建的搜索引擎中，我负责的是同城旅游中的游记。使用的爬虫框架是 Scrapy，简单来说，爬虫框架就是一个帮助你访问网页内容然后根据特定规则把需要的信息抽取出来的工具。">
@@ -325,15 +325,13 @@
 <h2 id="u722C_u53D6_u9759_u6001_u9875_u9762"><a href="#u722C_u53D6_u9759_u6001_u9875_u9762" class="headerlink" title="爬取静态页面"></a>爬取静态页面</h2><p>网页主要分为两种，一是静态页面，整个 HTML 的内容是固定的，获取到的就是所有内容，处理起来也没有太大难度；二是动态生成的页面，初始获取的并不是完整内容，随着用户在页面上的交互会动态地调整内容。Python 和 Scrapy 的安装过程就不赘述了，没有需要特别注意的地方。首先我们通过静态页面来练练手，官网的<a href="http://scrapy-chs.readthedocs.io/zh_CN/1.0/intro/tutorial.html" target="_blank" rel="external">入门教程</a>就是很好的例子。</p>
 <p>回到我们要爬取的同城旅游的游记中来，一篇游记的网页基本上算是一个静态网页（动态加载图片对于网页内容分析没有太大影响），比如这一篇<a href="http://www.ly.com/travels/157861.html" target="_blank" rel="external">江西游</a>就是一个典型的简单的静态页面，直接使用 Scrapy 自带的命令行进行测试：</p>
 <ul>
-<li><p>首先使用 Scarpy 分析工具爬取这个页面：<code>scrapy shell &quot;http://www.ly.com/travels/157861.html&quot;</code></p>
+<li><p>首先使用 Scarpy 分析工具爬取这个页面：<br><code>scrapy shell &quot;http://www.ly.com/travels/157861.html&quot;</code></p>
 </li>
 <li><p>分析其 HTML 源码中的核心内容，主要有图片和文字，针对这两种内容构造合适的<a href="http://scrapy-chs.readthedocs.io/zh_CN/1.0/topics/selectors.html#topics-selectors" target="_blank" rel="external">选择器</a>，可以理解为构造特定的规则。这里的规则构建过程可以直接在 Chrome 中使用 XPath 插件进行快速尝试。</p>
 </li>
-<li><p>这里以 XPath 为例，对于图片，发现其链接都出现在 <code>&lt;img&gt;</code> 的 <code>data-img-src</code> 中（从命名中也能猜到八九不离十）。运行：</p>
-<p><code>response.xpath(&#39;//img/@data-img-src&#39;).extract()</code>，得到所有图片链接。</p>
+<li><p>这里以 XPath 为例，对于图片，发现其链接都出现在 <code>&lt;img&gt;</code> 的 <code>data-img-src</code> 中（从命名中也能猜到八九不离十）。运行：<br><code>response.xpath(&#39;//img/@data-img-src&#39;).extract()</code>，得到所有图片链接。</p>
 </li>
-<li><p>文字同理，发现游记中的文字不多，出现在含有 <code>id</code> 属性的 <code>&lt;p&gt;</code> 的文本中。但是有一些其他的无意义的内容也有相同特征，所以需要细化规则比如限制 <code>id</code> 属性必须含有 <code>txt</code> 字段。运行：</p>
-<p><code>response.xpath(&quot;//p[contains(@id, &#39;txt&#39;)]/text()&quot;).extract()</code>，得到游记中的文字。</p>
+<li><p>文字同理，发现游记中的文字不多，出现在含有 <code>id</code> 属性的 <code>&lt;p&gt;</code> 的文本中。但是有一些其他的无意义的内容也有相同特征，所以需要细化规则比如限制 <code>id</code> 属性必须含有 <code>txt</code> 字段。运行：<br><code>response.xpath(&quot;//p[contains(@id, &#39;txt&#39;)]/text()&quot;).extract()</code>，得到游记中的文字。</p>
 </li>
 </ul>
 <h2 id="u722C_u53D6_u52A8_u6001_u5185_u5BB9"><a href="#u722C_u53D6_u52A8_u6001_u5185_u5BB9" class="headerlink" title="爬取动态内容"></a>爬取动态内容</h2><p>对于动态页面就稍微复杂了，主要是对于目标网页的直接请求所返回的内容并不是所需要的全部内容。这时候的解决思路是使用第三方库模拟用户操作，对动态变化后的网页再分析，以此拼接出所需要的全部内容，比较常见的有 <a href="https://chaycao.github.io/2016/08/19/Scrapy-Selenium-Phantomjs/" target="_blank" rel="external">Scrapy + Selenium + Phantomjs</a> 的组合库。但是还有个取巧的方法，不管动态网页如何变化，在变化过程中一定需要再次向后端请求新的数据，如果能直接分析出这个数据接口并加以使用，就完全不需要那么费劲了。</p>
