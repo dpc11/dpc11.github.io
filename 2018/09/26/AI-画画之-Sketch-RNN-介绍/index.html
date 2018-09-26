@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="DPC, 布白, Hexo, NexT, iOS, 数据" />
+  <meta name="keywords" content="前端, 深度学习," />
 
 
 
@@ -84,15 +84,16 @@
 
 
 
-<meta name="description" content="数据挖掘，科幻小说，民谣吉他">
-<meta property="og:type" content="website">
-<meta property="og:title" content="布白">
-<meta property="og:url" content="http://dpc11.cn/categories/技术/index.html">
+<meta name="description" content="腾讯 MIG 实习期间，在视频理解 demo 的基础上又推进了视频搜索 demo，主要是使用多媒体方式：文字、图片、视频和画画来搜索视频。我的工作还是实现前端平台，其中画画模块需要一个画板能接收用户的画画数据，包括画画线条和笔画顺序等数据。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AI 画画之 Sketch-RNN 介绍">
+<meta property="og:url" content="http://dpc11.cn/2018/09/26/AI-画画之-Sketch-RNN-介绍/index.html">
 <meta property="og:site_name" content="布白">
-<meta property="og:description" content="数据挖掘，科幻小说，民谣吉他">
+<meta property="og:description" content="腾讯 MIG 实习期间，在视频理解 demo 的基础上又推进了视频搜索 demo，主要是使用多媒体方式：文字、图片、视频和画画来搜索视频。我的工作还是实现前端平台，其中画画模块需要一个画板能接收用户的画画数据，包括画画线条和笔画顺序等数据。">
+<meta property="og:updated_time" content="2018-09-26T02:28:33.425Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="布白">
-<meta name="twitter:description" content="数据挖掘，科幻小说，民谣吉他">
+<meta name="twitter:title" content="AI 画画之 Sketch-RNN 介绍">
+<meta name="twitter:description" content="腾讯 MIG 实习期间，在视频理解 demo 的基础上又推进了视频搜索 demo，主要是使用多媒体方式：文字、图片、视频和画画来搜索视频。我的工作还是实现前端平台，其中画画模块需要一个画板能接收用户的画画数据，包括画画线条和笔画顺序等数据。">
 
 
 
@@ -113,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://dpc11.cn/categories/技术/"/>
+  <link rel="canonical" href="http://dpc11.cn/2018/09/26/AI-画画之-Sketch-RNN-介绍/"/>
 
-  <title> 分类: 技术 | 布白 </title>
+  <title> AI 画画之 Sketch-RNN 介绍 | 布白 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,7 +137,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -224,303 +225,161 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        技术
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/26/AI-画画之-Sketch-RNN-介绍/" itemprop="url">
-              
-                <span itemprop="name">AI 画画之 Sketch-RNN 介绍</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-26T11:12:58+09:00"
-              content="2018-09-26" >
-          09-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2018/09/26/网页端视频播放方案/" itemprop="url">
-              
-                <span itemprop="name">网页端视频播放方案</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-09-26T11:12:31+09:00"
-              content="2018-09-26" >
-          09-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2018/06/04/面试全记录/" itemprop="url">
-              
-                <span itemprop="name">找工作全记录</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-06-04T09:24:14+09:00"
-              content="2018-06-04" >
-          06-04
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/22/以同程旅游为例的爬虫入门/" itemprop="url">
-              
-                <span itemprop="name">以同程旅游为例的爬虫入门</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-22T18:21:40+09:00"
-              content="2017-05-22" >
-          05-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/03/30/基于向量空间模型的中文文本相似度计算/" itemprop="url">
-              
-                <span itemprop="name">基于向量空间模型的中文文本相似度计算</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-03-30T11:01:04+09:00"
-              content="2017-03-30" >
-          03-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/27/Ubuntu-14-MongoDB-3-0-环境搭建/" itemprop="url">
-              
-                <span itemprop="name">Ubuntu 14 MongoDB 3.0 环境搭建</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-27T16:51:24+09:00"
-              content="2016-12-27" >
-          12-27
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/05/Ubuntu-14-Hadoop-2-6-集群搭建/" itemprop="url">
-              
-                <span itemprop="name">Ubuntu 14 Hadoop 2.6 集群搭建</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-05T16:50:46+09:00"
-              content="2016-12-05" >
-          12-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/12/02/第一次-App-Store-上架/" itemprop="url">
-              
-                <span itemprop="name">第一次 App Store 上架</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-12-02T18:15:39+09:00"
-              content="2016-12-02" >
-          12-02
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/10/28/CocoaPods-国内安装方法/" itemprop="url">
-              
-                <span itemprop="name">CocoaPods 国内安装方法</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-10-28T16:41:45+09:00"
-              content="2016-10-28" >
-          10-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/08/25/零代码搭建VPN/" itemprop="url">
-              
-                <span itemprop="name">零代码搭建 VPN</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-25T22:23:43+09:00"
-              content="2016-08-25" >
-          08-25
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/categories/技术/page/2/">2</a><a class="extend next" rel="next" href="/categories/技术/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                AI 画画之 Sketch-RNN 介绍
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2018-09-26T11:12:58+09:00" content="2018-09-26">
+              2018-09-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+             <span id="/2018/09/26/AI-画画之-Sketch-RNN-介绍/" class="leancloud_visitors" data-flag-title="AI 画画之 Sketch-RNN 介绍">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
 
 
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>腾讯 MIG 实习期间，在视频理解 demo 的基础上又推进了视频搜索 demo，主要是使用多媒体方式：文字、图片、视频和画画来搜索视频。我的工作还是实现前端平台，其中画画模块需要一个画板能接收用户的画画数据，包括画画线条和笔画顺序等数据。<br><a id="more"></a></p>
+<p>视频搜索 demo 的画画搜索模块参考的是最近很火的“猜画小歌”，其原型是 Google AI 实验室推出的 <a href="https://quickdraw.withgoogle.com/" target="_blank" rel="external">Quick, Draw!</a>，主要是使用 RNN 对用户画出来的简笔画进行分类预测，并且已经在 TensorFlow 上给出了教程 <a href="https://www.tensorflow.org/tutorials/sequences/recurrent_quickdraw" target="_blank" rel="external">Recurrent Neural Networks for Drawing Classification</a>，参考的论文则是 <a href="https://arxiv.org/abs/1704.03477" target="_blank" rel="external">A Neural Representation of Sketch Drawings</a>，但是其并没有开源其前端画板和画画编码的源码。</p>
+<p>因此前端画板部分主要参考了类似的完全开源的 <a href="https://github.com/tensorflow/magenta-demos/tree/master/sketch-rnn-js" target="_blank" rel="external">Sketch-RNN</a>，Sketch-RNN 不仅仅有前端画板记录并优化用户的画画数据，还能够在用户画画的基础上选择物体模型让 AI 进行补全画画，感觉可以作为“猜画小歌”的升级版“帮画小歌”，感兴趣的可以试试作者给出的 <a href="https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html" target="_blank" rel="external">demo</a>。</p>
+<h2 id="u96C6_u6210_Skech-RNN-JS"><a href="#u96C6_u6210_Skech-RNN-JS" class="headerlink" title="集成 Skech-RNN-JS"></a>集成 Skech-RNN-JS</h2><p>Skecth-RNN-JS 是一个完全使用 JavaScript 实现的 Sketch-RNN 项目，包括前端画板、画画编码和是使用预训练好的模型生成简笔画的功能，并且源码中包括了一系列的前端 demo 用于展示各种特性。因为我们的目标主要是集成 Sketch-RNN 的前端画板，并把用户画画的数据编码成可以用于简笔画分类的数据格式，因此参照的主要是 predict.html / predict.js 这个 demo：</p>
+<ul>
+<li><p><strong>前端画板：</strong>分析 predict demo 源码可以发现前端画板主要是集成了一个图形绘制和交互开源库 p5.js，可以对一个 canvas 画布进行底层绘制操作，包括设置画布的宽高背景色，设置画笔的粗细颜色然后绘制直线以及各种基本图形，响应鼠标位置和操作进行相应的绘制，设置帧率然后调用 draw() 动态绘制等等。然后这个 canvas 画布可以嵌入到网页元素中去作为我们的前端画板，响应用户的鼠标操作完成简笔画的绘制。</p>
+</li>
+<li><p><strong>画画编码：</strong>Sketch-RNN 里首先是使用 Line Data 来记录一系列的点组成的笔画，比如 [[[x1, y1], [x2, y2], [x3, y3]], [[x4, y4], [x5, y5]]] 表示整个简笔画由两笔组成，第一笔由点 1、2、3 连起来，第二笔由点 4、5 连起来。当然实际的简笔画所包含的点要复杂得多，所以在用户在每完成一笔之后会进行一定的辅助平滑以减少所包含的点个数。之后 Line Data 就可以很容易地转换成 Recurrent Neural Networks for Drawing Classification 所需要的 drawing 数据格式，这就完成了画画编码。此外 Sketch-RNN 还进一步将 Line Data 转换成了 Stroke Data 用于生成简笔画，这里就不展开讲了。</p>
+</li>
+<li><p><strong>生成画画：</strong>这一部分没有深入研究，只是直接把 Sketch-RNN 在用户画画基基础上根据模型生成画画的功能集成进来了，其工作流程主要是：对用户画画进行编码 -&gt; 加载预训练好的模型文件（即神经网络权重数据）-&gt; 将画画编码数据喂给模型进行预测 -&gt; 重新画画或者在用户画画的基础上补全画画。</p>
+</li>
+</ul>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端-深度学习/" rel="tag">#前端, 深度学习</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/26/网页端视频播放方案/" rel="next" title="网页端视频播放方案">
+                <i class="fa fa-chevron-left"></i> 网页端视频播放方案
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -528,6 +387,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -547,8 +410,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -636,6 +508,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#u96C6_u6210_Skech-RNN-JS"><span class="nav-number">1.</span> <span class="nav-text">集成 Skech-RNN-JS</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -743,6 +626,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
