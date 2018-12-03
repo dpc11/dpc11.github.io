@@ -9,7 +9,7 @@ body {
 .comic {
     display: flex;
     flex-wrap: wrap;
-    font-family: 'comic sans ms', 'ms gothic', cursive;
+    font-family: 'comic sans ms', 'ms gothic', 'helvetica';
     font-size: 18px;
     padding: 1vmin;
 }
@@ -154,7 +154,7 @@ a:active {
 a {
     position: relative;
     float: left;
-    font-family: 'comic sans ms', cursive;
+    font-family: 'comic sans ms', 'ms gothic', 'helvetica';
     margin: 50px 40px;
     color: #000;
     text-decoration: none;
