@@ -137,25 +137,25 @@ body {
 }
 /* Button style */
 
-a span {
+#play span {
     background: #FFF;
     display: block;
-    padding: 5px 10px;
+    padding: 5px 8px;
     border-radius: 5px;
     border: 2px solid #000;
 }
 
-a:active {
+#play:active {
     top: 4px;
     padding-bottom: 0px;
     box-shadow: 0 1px 0 #000;
 }
 
-a {
+#play {
     position: relative;
     float: left;
     font-family: 'comic sans ms', 'ms gothic', 'helvetica';
-    margin: 60px 20px;
+    margin: 60px 0px 60px 20px;
     color: #000;
     text-decoration: none;
     padding-bottom: 3px;
