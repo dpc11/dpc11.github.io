@@ -137,7 +137,7 @@ body {
 }
 /* Button style */
 
-a span {
+a button {
     background: #FFF;
     display: block;
     padding: 5px 8px;
