@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Onomatopoeia - 擬声語</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-
+<link href="main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+<title>Onomatopoeia - 擬声語</title>
 <article class="comic">
     <div class="panel">
-        <a href="#" class="btn"><span>Play Ono-Game</span></a>
+        <a data-toggle="modal" data-target="#game"><span>Play Ono-Game</span></a>
     </div>
     <div class="panel">
-        <p class="speech" style="margin-left: 40px;">キラキラ！</p>
+        <p class="speech" style="margin-left: 40px;">キラキラ</p>
         <img style="margin-left: 30px; display: block;" src="res/%E3%82%AD%E3%83%A9%E3%82%AD%E3%83%A9.png" alt="キラキラ" height="100" width="100">
         <p class="text bottom-right">stars shining</p>
     </div>
@@ -28,4 +31,59 @@
     <div class="panel"></div>
 </article>
 
+<!-- Modal -->
+<div class="modal fade comic" id="game" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Onomatopoeia Game</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-auto">
+
+                <img id="anime" style="margin-left: 60px; display: block;" src="res/%E3%82%AD%E3%83%A9%E3%82%AD%E3%83%A9.png" alt="キラキラ" height="200" width="200">
+
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="radio1" name="radio" class="custom-control-input" onclick="selectt(1)">
+                    <label id="label1" class="custom-control-label" for="radio1">キラキラ</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="radio2" name="radio" class="custom-control-input">
+                    <label id="label2" class="custom-control-label" for="radio2">ザアザア</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="radio3" name="radio" class="custom-control-input">
+                    <label id="label3" class="custom-control-label" for="radio3">ペラペラ</label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="continuee()">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    // Selected the right one and tada it!
+    function selectt(id)
+    {
+        $('#anime').addClass('animated tada');
+        $('#label' + id).css('color', 'green');
+    }
+    
+    // Continue with next game
+    function continuee()
+    {
+        $('#game').modal('hide');
+        $('#game').modal('show');
+    }
+</script>
+    
 </html>

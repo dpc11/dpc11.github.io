@@ -20,7 +20,7 @@ body {
     box-shadow: 0 6px 6px -6px #000;
     display: inline-block;
     flex: 1 1;
-    height: 160px;
+    height: 170px;
     margin: 1vmin;
     overflow: hidden;
     position: relative;
@@ -84,11 +84,11 @@ body {
 }
 
 .panel:nth-child(1) {
-    flex-basis: 200px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(2) {
-    flex-basis: 210px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(3) {
@@ -96,27 +96,27 @@ body {
 }
 
 .panel:nth-child(4) {
-    flex-basis: 200px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(5) {
-    flex-basis: 200px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(6) {
-    flex-basis: 200px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(7) {
-    flex-basis: 200px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(8) {
-    flex-basis: 200px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(9) {
-    flex-basis: 200px;
+    flex-basis: 175px;
 }
 /* background colours */
 
@@ -140,7 +140,7 @@ body {
 a span {
     background: #FFF;
     display: block;
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
     border: 2px solid #000;
 }
@@ -155,7 +155,7 @@ a {
     position: relative;
     float: left;
     font-family: 'comic sans ms', 'ms gothic', 'helvetica';
-    margin: 50px 40px;
+    margin: 60px 20px;
     color: #000;
     text-decoration: none;
     padding-bottom: 3px;
