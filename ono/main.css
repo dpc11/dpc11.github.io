@@ -20,7 +20,7 @@ body {
     box-shadow: 0 6px 6px -6px #000;
     display: inline-block;
     flex: 1 1;
-    height: 170px;
+    height: 200px;
     margin: 1vmin;
     overflow: hidden;
     position: relative;
@@ -96,7 +96,7 @@ body {
 }
 
 .panel:nth-child(4) {
-    flex-basis: 175px;
+    flex-basis: 260px;
 }
 
 .panel:nth-child(5) {
@@ -108,7 +108,7 @@ body {
 }
 
 .panel:nth-child(7) {
-    flex-basis: 175px;
+    flex-basis: 220px;
 }
 
 .panel:nth-child(8) {
@@ -116,8 +116,53 @@ body {
 }
 
 .panel:nth-child(9) {
+    flex-basis: 260px;
+}
+
+.panel:nth-child(10) {
     flex-basis: 175px;
 }
+
+.panel:nth-child(11) {
+    flex-basis: 320px;
+}
+
+.panel:nth-child(12) {
+    flex-basis: 175px;
+}
+
+.panel:nth-child(13) {
+    flex-basis: 175px;
+}
+
+.panel:nth-child(14) {
+    flex-basis: 175px;
+}
+
+.panel:nth-child(15) {
+    flex-basis: 220px;
+}
+
+.panel:nth-child(16) {
+    flex-basis: 220px;
+}
+
+.panel:nth-child(17) {
+    flex-basis: 175px;
+}
+
+.panel:nth-child(18) {
+    flex-basis: 175px;
+}
+
+.panel:nth-child(19) {
+    flex-basis: 175px;
+}
+
+.panel:nth-child(20) {
+    flex-basis: 175px;
+}
+
 /* background colours */
 
 .panel:nth-child(4n+1) {
