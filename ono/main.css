@@ -116,11 +116,11 @@ body {
 }
 
 .panel:nth-child(9) {
-    flex-basis: 260px;
+    flex-basis: 175px;
 }
 
 .panel:nth-child(10) {
-    flex-basis: 175px;
+    flex-basis: 260px;
 }
 
 .panel:nth-child(11) {
