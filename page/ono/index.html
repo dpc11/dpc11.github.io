@@ -138,8 +138,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
-    var ono = ['きらきら', 'ざあざあ', 'ぺろぺろ', 'にこにこ', 'にやにや', 'しくしく', 'じろじろ', 'がくがく',
-        'のろのろ', 'こんこん', 'どきどき', 'わくわく', 'さらさら', 'いらいら', 'うとうと'
+    var ono = ['きらきら', 'ざあざあ', 'ぺろぺろ', 'にこにこ', 'にやにや', 'しくしく', 'じろじろ', 'がくがく',
+        'のろのろ', 'こんこん', 'どきどき', 'わくわく', 'さらさら', 'いらいら', 'うとうと'
     ];
     var onoimg = {
         'きらきら': 'きらきら.png',
@@ -149,10 +149,10 @@
         'にやにや': 'にやにや.png',
         'しくしく': 'しくしく.jpg',
         'じろじろ': 'じろじろ.gif',
-        'がくがく': 'がくがく.jpg',
+        'がくがく': 'がくがく.jpg',
         'のろのろ': 'のろのろ.jpg',
         'こんこん': 'こんこん.png',
-        'どきどき': 'どきどき.png',
+        'どきどき': 'どきどき.png',
         'わくわく': 'わくわく.png',
         'さらさら': 'さらさら.png',
         'いらいら': 'いらいら.jpg',
@@ -193,6 +193,7 @@
         })
         
         shuffle(ono);
+        console.log(ono)
         $('#label1').text(ono[0]);
         $('#label2').text(ono[1]);
         $('#label3').text(ono[2]);
