@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <title>Onomatopoeia - 擬声語</title>
-<h1><img style="display: block; width: 80%; margin: 20px auto 0 auto;" src="res/title.png"></h1>
+<h1><img style="display: block; width: 80%; max-width: 600px; margin: 20px auto 0 auto;" src="res/title.png"></h1>
 <article class="comic">
     <div class="panel">
         <a><button data-toggle="modal" data-target="#game">Play Ono-Game</button></a>
@@ -53,7 +53,7 @@
     </div>
     <div class="panel">
         <p class="speech" style="margin-left: 40px;">がくがく</p>
-        <img style="margin-left: 30px; display: block;" src="res/がくがく.jpg" alt="がくがく" height="130" width="130">
+        <img style="margin-left: 30px; display: block; margin-top: -20px;" src="res/がくがく.jpg" alt="がくがく" height="130" width="130">
         <p class="text bottom-right">fear trembling</p>
     </div>
     <div class="panel">
@@ -108,26 +108,26 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body mx-auto">
+            <div id="update" class="modal-body mx-auto">
 
-                <img id="anime" style="margin-left: 60px; display: block;" src="res/きらきら.png" alt="キラキラ" height="200" width="200">
+                <img id="anime" style="margin-left: 60px; margin-bottom: 20px; display: block; max-height: 300px; max-width: 300px;" src="res/きらきら.png" alt="anime_image">
 
-                <div class="custom-control custom-radio custom-control-inline">
+                <div class="custom-control custom-radio custom-control-inline" style="margin-right: 0.4rem;">
                     <input type="radio" id="radio1" name="radio" class="custom-control-input" onclick="selectt(1)">
                     <label id="label1" class="custom-control-label" for="radio1">きらきら</label>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="radio2" name="radio" class="custom-control-input">
+                <div class="custom-control custom-radio custom-control-inline" style="margin-right: 0.4rem;">
+                    <input type="radio" id="radio2" name="radio" class="custom-control-input" onclick="selectt(2)">
                     <label id="label2" class="custom-control-label" for="radio2">ざあざあ</label>
                 </div>
-                <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="radio3" name="radio" class="custom-control-input">
+                <div class="custom-control custom-radio custom-control-inline" style="margin-right: 0;">
+                    <input type="radio" id="radio3" name="radio" class="custom-control-input" onclick="selectt(3)">
                     <label id="label3" class="custom-control-label" for="radio3">ぺろぺろ</label>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" onclick="continuee()">Submit</button>
+                <button type="button" class="btn btn-primary" onclick="continuee()">Continue</button>
             </div>
         </div>
     </div>
@@ -138,21 +138,74 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <script>
-    // Selected the right one and tada it!
+    var ono = ['きらきら', 'ざあざあ', 'ぺろぺろ', 'にこにこ', 'にやにや', 'しくしく', 'じろじろ', 'がくがく',
+        'のろのろ', 'こんこん', 'どきどき', 'わくわく', 'さらさら', 'いらいら', 'うとうと'
+    ];
+    var onoimg = {
+        'きらきら': 'きらきら.png',
+        'ざあざあ': 'きらきら.png',
+        'ぺろぺろ': 'ぺろぺろ.gif',
+        'にこにこ': 'にこにこ.png',
+        'にやにや': 'にやにや.png',
+        'しくしく': 'しくしく.jpg',
+        'じろじろ': 'じろじろ.gif',
+        'がくがく': 'がくがく.jpg',
+        'のろのろ': 'のろのろ.jpg',
+        'こんこん': 'こんこん.png',
+        'どきどき': 'どきどき.png',
+        'わくわく': 'わくわく.png',
+        'さらさら': 'さらさら.png',
+        'いらいら': 'いらいら.jpg',
+        'うとうと': 'うとうと.jpg',
+    };
+    var correct = 0;
+
+    // If select the right one the tada it!
     function selectt(id) {
-        $('#anime').addClass('animated tada');
-        $('#label' + id).css('color', 'green');
+        if (id == (correct + 1)) {
+            $('#anime').addClass('animated tada');
+            $('#label' + id).css('color', 'green');
+        } else {
+            $('#label' + id).css('color', 'red');
+        }
+    }
+    
+    // Shuffle array in place
+    function shuffle(a) {
+        var j, x, i;
+        for (i = a.length - 1; i > 0; i--) {
+            j = Math.floor(Math.random() * (i + 1));
+            x = a[i];
+            a[i] = a[j];
+            a[j] = x;
+        }
+        return a;
     }
 
+    // Update game content
+    function update() {
+        $('#anime').removeClass('animated tada');
+        $('#update label').each(function() {
+            $(this).css('color', '');
+        })
+        $('#update input').each(function() {
+            $(this).prop('checked', false);
+        })
+        
+        shuffle(ono);
+        $('#label1').text(ono[0]);
+        $('#label2').text(ono[1]);
+        $('#label3').text(ono[2]);
+        correct = Math.floor(Math.random() * 3)
+        $('#anime').attr('src', 'res/' + onoimg[ono[correct]]);
+        $('#game').modal('show');
+    }
+    
     // Continue with next game
     function continuee() {
         $('#game').modal('hide');
-
-        // TODO: Reset the game
-
-        $('#game').modal('show');
+        setTimeout("update()", 500);
     }
-
 </script>
 
 </html>
