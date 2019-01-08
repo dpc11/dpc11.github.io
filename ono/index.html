@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <title>Onomatopoeia - 擬声語</title>
-<h1><img style="display: block; width: 80%; max-width: 600px; margin: 20px auto 0 auto;" src="res/title.png"></h1>
+<h1><a hred="https://www.icloud.com/keynote-live/sc:00lZVlzfBYuZXevzmLQ90cokmjQw50r6lD9hb-DYd5w-FvnHNtaZvR1DrbLNnI5GJRI"><img style="display: block; width: 80%; max-width: 600px; margin: 20px auto 0 auto;" src="res/title.png"></a></h1>
 <article class="comic">
     <div class="panel">
         <a><button data-toggle="modal" data-target="#game">Play Ono-Game</button></a>
@@ -169,7 +169,7 @@
             $('#label' + id).css('color', 'red');
         }
     }
-    
+
     // Shuffle array in place
     function shuffle(a) {
         var j, x, i;
@@ -191,7 +191,7 @@
         $('#update input').each(function() {
             $(this).prop('checked', false);
         })
-        
+
         shuffle(ono);
         console.log(ono)
         $('#label1').text(ono[0]);
@@ -201,12 +201,13 @@
         $('#anime').attr('src', 'res/' + onoimg[ono[correct]]);
         $('#game').modal('show');
     }
-    
+
     // Continue with next game
     function continuee() {
         $('#game').modal('hide');
         setTimeout("update()", 500);
     }
+
 </script>
 
 </html>
