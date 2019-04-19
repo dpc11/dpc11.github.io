@@ -13,7 +13,11 @@ body {
 @media (min-width: 992px) {
     body {
         padding-top: 0;
-        padding-left: 17rem;
+        padding-left: 15rem;
+    }
+    
+    .modal-open #sideNav{
+          padding: .5rem 1rem !important;
     }
 }
 
@@ -36,16 +40,16 @@ h2 {
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .subheading {
-    font-family: 'Microsoft YaHei','Helvetica Neue', Arial, sans-serif;
-    font-size: 1.2rem;
+    font-family: 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.1rem;
 }
 
 .social-icons a:last-child {
@@ -60,6 +64,7 @@ h4 {
     font-size: 1.1rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
+    padding: 0.2rem;
 }
 
 #sideNav .navbar-toggler:focus {
@@ -79,7 +84,7 @@ h4 {
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
-        width: 17rem;
+        width: 15rem;
         height: 100vh;
     }
 
@@ -169,4 +174,8 @@ a {
 
 img {
     border-radius: 0.6rem;
+}
+
+li {
+    padding-bottom: 0.5rem;
 }

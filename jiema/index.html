@@ -16,6 +16,9 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
 
+    <!-- Lightbox CSS -->
+    <link href="vendor/lightbox/ekko-lightbox.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -51,7 +54,13 @@
                     <a class="nav-link js-scroll-trigger" href="#publication">论文发表</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#experiment">实验剪影</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">联系方式</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#link">相关链接</a>
                 </li>
                 <!--
                 <li class="nav-item">
@@ -99,9 +108,9 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
                     <div class="resume-content">
-                        <img style="object-fit:contain; margin-right: 0.5rem; vertical-align: top; max-width: 220px;" class="img-fluid" src="img/马杰.jpg" alt="">
+                        <img style="object-fit:contain; margin-right: 0.5rem; vertical-align: top; max-width: 210px;" src="img/马杰.jpg" alt="马杰">
                         <div style="display: inline-block;">
-                            <h3 class="mb-0">马杰</h3>
+                            <h4 class="mb-0">马杰</h4>
                             <div class="subheading text-primary mb-3">特别研究员，2015 青年千人</div>
                             <p>
                                 1998 - 2003，中国科学技术大学，材料科学与工程系，学士
@@ -120,11 +129,11 @@
                     </div>
                 </div>
 
-                <hr style="margin-top: 1rem; margin-bottom: 1.5rem;">
-                
+                <hr style="margin-top: 1.5rem; margin-bottom: 2.5rem;">
+
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-start">
-                    <div class="resume-content">
-                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px; margin-right: 7rem;" class="img-fluid" src="img/任清勇.png" alt="">
+                    <div class="resume-content mb-3">
+                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px; margin-right: 7rem;" src="img/任清勇.png" alt="任清勇">
                         <div>
                             <h4 class="mb-0">任清勇</h4>
                             <div class="subheading text-primary mb-2">博士后</div>
@@ -134,8 +143,8 @@
                         </div>
                     </div>
 
-                    <div class="resume-content">
-                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px;" class="img-fluid" src="img/林高庭.png" alt="">
+                    <div class="resume-content mb-3">
+                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px;" src="img/林高庭.png" alt="林高庭">
                         <div>
                             <h4 class="mb-0">林高庭</h4>
                             <div class="subheading text-primary mb-2">博士后</div>
@@ -148,11 +157,11 @@
                     </div>
                 </div>
 
-                <hr style="margin-top: 0.5rem; margin-bottom: 1.5rem;">
-                
+                <hr style="margin-top: 0.5rem; margin-bottom: 2.5rem;">
+
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-start">
-                    <div class="resume-content">
-                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px; margin-right: 6rem;" class="img-fluid" src="img/吴江涛.png" alt="">
+                    <div class="resume-content mb-3">
+                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px; margin-right: 6rem;" src="img/吴江涛.png" alt="吴江涛">
                         <div>
                             <h4 class="mb-0">吴江涛</h4>
                             <div class="subheading text-primary mb-2">研究生（直博）</div>
@@ -165,8 +174,8 @@
                         </div>
                     </div>
 
-                    <div class="resume-content">
-                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px; margin-right: 7rem;" class="img-fluid" src="img/焦金龙.png" alt="">
+                    <div class="resume-content mb-3">
+                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px; margin-right: 7rem;" src="img/焦金龙.png" alt="焦金龙">
                         <div>
                             <h4 class="mb-0">焦金龙</h4>
                             <div class="subheading text-primary mb-2">研究生（直博）</div>
@@ -179,9 +188,9 @@
                             </p>
                         </div>
                     </div>
-                    
+
                     <div class="resume-content">
-                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px;" class="img-fluid" src="img/陈闽楠.jpeg" alt="">
+                        <img style="object-fit:contain; margin-bottom: 0.5rem; max-height: 240px;" src="img/陈闽楠.jpeg" alt="陈闽楠">
                         <div>
                             <h4 class="mb-0">陈闽楠</h4>
                             <div class="subheading text-primary mb-2">研究生（直博）</div>
@@ -206,23 +215,33 @@
             <div class="w-100">
                 <h3 class="mb-5">研究内容</h3>
 
-                <div class="resume-item mb-4">
-                    <div class="resume-content">
-                        <h4 class="mb-3 text-primary">中子衍射技术</h4>
-                        <p>
-                            <br>中子衍射或弹性中子散射是中子散射在确定材料的原子和磁结构时的应用。将待检查的样品置于热或冷中子束中以获得提供材料结构信息的衍射图案。该技术类似于X射线衍射，但是因为中子与X射线的性质不同，导致了其测量的信息并不完全一致。
-                            <br><br>中子和X射线与物质的相互作用不同。X射线主要与每个原子周围的束缚电子相互作用。因此，对于具有较大原子序数(Z)的原子，衍射X射线强度对其的作用效果较好。但是不同的是，中子不带电，由此它可以深入到目标材料的深处与原子核直接作用，发生衍射。通常情况下，不仅较大原子序数的原子可以发生中子衍射，轻(低Z)原子也能产生很强的衍射效果。散射长度与同位素变化有关而不是随着原子序数线性变化。由此一来，对于一些原子序数十分相似的元素例如Mn，Co，Ni，中子衍射可以将它们很好的区分开来，可以显示出强烈的，明确定义的衍射峰。
-                            <br><br>其次，因为中子的电中性这一特性还带来了许多好处。其具有很好的稳定性，对样品性质的扰动非常小。同时对研究一些活生物体的样品而言，几乎没有辐射损伤。另外电中性导致中子的穿透深度很深，穿透力很强，可以研究材料的块体性质，也可以有益于极端条件下的材料研究例如极端温度场和电磁场。
-                            <br><br>再者，因为相较于同波长的X射线来说，中子所带的能量低许多，并且与物质中元激发的能量大致相同。由此中子在测定静态平均化学结构的基础上，还可以研究原子排列的动力学性质。
-                            <br><br>另一方面，中子带有磁矩，可以跟固体磁性材料内的未成对电子相互作用。弹性磁相互作用散射能够给出电子自旋分布以及未成对电子的密度分布，根据非弹性中子散射可以得到磁子能量信息。因此当今科研中，中子方法被广泛运用于磁性晶体的结构研究。
-                        </p>
-                    </div>
+                <!--
+                <div class="mb-4">
+                    <h4 class="mb-3 text-primary">中子衍射技术</h4>
+                    <p>
+                        <br>中子衍射或弹性中子散射是中子散射在确定材料的原子和磁结构时的应用。将待检查的样品置于热或冷中子束中以获得提供材料结构信息的衍射图案。该技术类似于X射线衍射，但是因为中子与X射线的性质不同，导致了其测量的信息并不完全一致。
+                        <br><br>中子和X射线与物质的相互作用不同。X射线主要与每个原子周围的束缚电子相互作用。因此，对于具有较大原子序数(Z)的原子，衍射X射线强度对其的作用效果较好。但是不同的是，中子不带电，由此它可以深入到目标材料的深处与原子核直接作用，发生衍射。通常情况下，不仅较大原子序数的原子可以发生中子衍射，轻(低Z)原子也能产生很强的衍射效果。散射长度与同位素变化有关而不是随着原子序数线性变化。由此一来，对于一些原子序数十分相似的元素例如Mn，Co，Ni，中子衍射可以将它们很好的区分开来，可以显示出强烈的，明确定义的衍射峰。
+                        <br><br>其次，因为中子的电中性这一特性还带来了许多好处。其具有很好的稳定性，对样品性质的扰动非常小。同时对研究一些活生物体的样品而言，几乎没有辐射损伤。另外电中性导致中子的穿透深度很深，穿透力很强，可以研究材料的块体性质，也可以有益于极端条件下的材料研究例如极端温度场和电磁场。
+                        <br><br>再者，因为相较于同波长的X射线来说，中子所带的能量低许多，并且与物质中元激发的能量大致相同。由此中子在测定静态平均化学结构的基础上，还可以研究原子排列的动力学性质。
+                        <br><br>另一方面，中子带有磁矩，可以跟固体磁性材料内的未成对电子相互作用。弹性磁相互作用散射能够给出电子自旋分布以及未成对电子的密度分布，根据非弹性中子散射可以得到磁子能量信息。因此当今科研中，中子方法被广泛运用于磁性晶体的结构研究。
+                    </p>
                 </div>
+-->
 
-                <div class="resume-item mb-4">
-                    <div class="resume-content">
-                        <h4 class="mb-3 text-primary">...</h4>
-                        <p>...</p>
+                <div class=" mb-4">
+                    <h4 class="mb-3 text-primary">中子散射能谱</h4>
+                    <ul>
+                        <li>不带电荷 -- 精确研究晶体结构</li>
+                        <li>具有磁矩 -- 精确确定磁结构的唯一方法</li>
+                        <li>热中子能量与元激发尺度相近 -- 测量元激发动力学</li>
+                    </ul>
+                    <div class="row">
+                    <a href="img/中子1.png" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-lg-2 col-md-6">
+                        <img src="img/中子1.png" class="img-fluid">
+                    </a>
+                    <a href="img/中子2.png" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-lg-2 col-md-5">
+                        <img src="img/中子2.png" class="img-fluid">
+                    </a>
                     </div>
                 </div>
 
@@ -290,6 +309,55 @@
                     </ol>
                 </div>
             </div>
+
+        </section>
+
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5" id="experiment">
+            <div class="w-100">
+                <h3 class="mb-5">实验剪影</h3>
+
+                <div class="row">
+                    <a href="img/1.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/1.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/2.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/2.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/3.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/3.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/4.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/4.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/5.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/5.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/6.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/6.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/8.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/8.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/9.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/9.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/10.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/10.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/7.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/7.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/11.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/11.jpg" class="img-fluid">
+                    </a>
+                    <a href="img/12.jpg" data-toggle="lightbox" data-gallery="experiment-gallery" class="p-3 p-lg-2 col-md-4">
+                        <img src="img/12.jpg" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
         </section>
 
         <hr class="m-0">
@@ -300,17 +368,17 @@
                 <h3 class="mb-5">欢迎加入</h3>
 
                 <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
-                    <div class="resume-content mb-3">
+                    <div class="mb-3">
                         <h4 class="mb-3">博士生</h4>
                         <p>1 - 2 名</p>
                     </div>
 
-                    <div class="resume-content mb-3">
+                    <div class="mb-3">
                         <h4 class="mb-3">研究生</h4>
                         <p>1 - 2 名</p>
                     </div>
 
-                    <div class="resume-content mb-3">
+                    <div class="mb-3">
                         <h4 class="mb-3">本科生</h4>
                         <p>暂无计划</p>
                     </div>
@@ -323,8 +391,8 @@
             <div class="w-100">
                 <h3 class="mb-5">联系方式</h3>
 
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-4">
-                    <div class="resume-content mb-3">
+                <div class="d-flex flex-column flex-md-row justify-content-between mb-4">
+                    <div class="mb-3">
                         <h4 class="text-primary mb-0">马杰副教授</h4>
 
                         <p>
@@ -338,6 +406,21 @@
             </div>
         </section>
 
+        <hr class="m-0">
+
+        <section class="resume-section p-3 p-lg-5" id="link">
+            <div class="w-100">
+                <h3 class="mb-5">相关链接</h3>
+
+                <ul class="subheading mb-3">
+                    <li><a href="http://www.sjtu.edu.cn/">上海交通大学</a></li>
+                    <li><a href="http://www.physics.sjtu.edu.cn/">物理与天文学院</a></li>
+                    <li><a href="http://www.physics.sjtu.edu.cn/node/355">凝聚态物理研究所</a></li>
+                </ul>
+            </div>
+
+        </section>
+
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -349,6 +432,18 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <!-- Lightbox -->
+    <script src="vendor/lightbox/ekko-lightbox.js"></script>
+
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+            event.preventDefault();
+            $(this).ekkoLightbox({
+                alwaysShowClose: true
+            });
+        });
+    </script>
 
 </body>
 
